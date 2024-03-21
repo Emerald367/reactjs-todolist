@@ -4,10 +4,16 @@ import TodoCard from "./components/TodoCard"
 
 
 function App() {
+  let todos = [
+    'Go to the gym',
+    'Eat more fruits and veg',
+    'Drive around'
+]
   return (
     <>
-     <TodoInput />
-     <TodoList />
+     <TodoInput  />
+     <TodoList todos={todos} />
+     <TodoCard />
     </>
   )
 }
